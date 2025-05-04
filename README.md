@@ -1,6 +1,6 @@
 # ArogyaAI: Your Personal Health Companion
 
-![ArogyaAI Logo](image.png)
+![ArogyaAI Logo](https://img.freepik.com/premium-vector/logo-virtual-healthcare-assistant-invent-simple-logo-virtual-healthcare-assistant-minimalist-simple-modern-vector-logo-design_538213-48589.jpg?w=826)
 
 ## Overview
 
