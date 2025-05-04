@@ -1,6 +1,6 @@
 # ArogyaAI: Your Personal Health Companion
 
-![ArogyaAI Logo](https://cdn-icons-png.flaticon.com/512/2966/2966321.png)
+![ArogyaAI Logo](image.png)
 
 ## Overview
 
