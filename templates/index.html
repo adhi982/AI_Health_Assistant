@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArogyaAI </title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Background Animations -->
+    <div class="background-animation"></div>
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+
+    <div class="container landing-container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/2966/2966321.png" alt="HealthAI Logo" class="logo">
+                <h1 class="app-name">ArogyaAI</h1>
+            </div>
+            <p class="tagline">Your Personal Health Companion</p>
+            <div class="trust-badges">
+                <span class="badge"><i class="fas fa-shield-alt"></i> HIPAA Compliant</span>
+                <span class="badge"><i class="fas fa-lock"></i> Secure & Private</span>
+                <span class="badge"><i class="fas fa-user-md"></i> AI-Powered</span>
+            </div>
+        </header>
+
+        <main class="main-content landing-content">
+            <h2 class="welcome-text">Welcome to ArogyaAI</h2>
+            <p class="welcome-description">Choose a service to get started with your health journey</p>
+            
+            <div class="service-grid">
+                <a href="{{ url_for('medications') }}" class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Get Medication Suggestions</h3>
+                    <p>Receive personalized medication recommendations based on your symptoms and age</p>
+                    <span class="service-cta">Get Started <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="{{ url_for('health_monitoring') }}" class="service-card coming-soon">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health Monitoring</h3>
+                    <p>Track your vital signs and health metrics over time</p>
+                    <span class="service-cta">Coming Soon</span>
+                </a>
+
+                <a href="{{ url_for('health_records') }}" class="service-card coming-soon">
+                    <div class="service-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3>Health Records</h3>
+                    <p>Securely store and manage your health records</p>
+                    <span class="service-cta">Coming Soon</span>
+                </a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ArogyaAI</h4>
+                    <p>Your trusted health companion powered by advanced AI technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Important Notice</h4>
+                    <p>This application uses AI technology to provide health suggestions. Always consult with a healthcare professional for medical advice.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Team</h4>
+                    <p><i class="fas fa-envelope"></i> poorvipalimpu28@gmail.com</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/poorvi-pal09/" target="_blank" class="social-link">Poorvi Pal</a></p>
+                    <p><i class="fas fa-envelope"></i> adithyant982@gmail.com</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/adithya982" target="_blank" class="social-link">Adithya N T</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 ArogyaAI. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

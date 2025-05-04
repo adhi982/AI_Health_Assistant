@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArogyaAI - Health Monitoring</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+
+    <div class="container">
+        <div class="back-button">
+            <a href="{{ url_for('index') }}" class="back-link" title="Back to Home">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </div>
+
+        <main class="main-content">
+            <div class="feature-header">
+                <h1><i class="fas fa-heartbeat"></i> Health Monitoring</h1>
+                <p class="subtitle">Track your vital signs and health metrics</p>
+            </div>
+
+            <div class="coming-soon-container">
+                <div class="coming-soon-content">
+                    <i class="fas fa-tools"></i>
+                    <h2>Coming Soon!</h2>
+                    <p>We're working hard to bring you advanced health monitoring features:</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-chart-line"></i> Real-time vital sign tracking</li>
+                        <li><i class="fas fa-history"></i> Health metrics history</li>
+                        <li><i class="fas fa-bell"></i> Custom health alerts</li>
+                        <li><i class="fas fa-chart-bar"></i> Progress reports</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Team</h4>
+                    <p><i class="fas fa-envelope"></i> poorvipalimpu28@gmail.com</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/poorvi-pal09/" target="_blank" class="social-link">Poorvi Pal</a></p>
+                    <p><i class="fas fa-envelope"></i> adithyant982@gmail.com</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/adithya982" target="_blank" class="social-link">Adithya N T</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 ArogyaAI. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 

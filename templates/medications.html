@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArogyaAI - Medication Suggestions</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Background Animations -->
+    <div class="background-animation"></div>
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/2966/2966321.png" alt="ArogyaAI Logo" class="logo">
+                <h1 class="app-name">ArogyaAI</h1>
+            </div>
+            <p class="tagline">Your Personal Health Companion</p>
+            <div class="trust-badges">
+                <span class="badge"><i class="fas fa-shield-alt"></i> HIPAA Compliant</span>
+                <span class="badge"><i class="fas fa-lock"></i> Secure & Private</span>
+                <span class="badge"><i class="fas fa-user-md"></i> AI-Powered</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="back-button">
+                <a href="{{ url_for('index') }}" class="back-link" title="Back to Home">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="symptom-checker">
+                <div class="checker-header">
+                    <h2><i class="fas fa-stethoscope"></i> How are you feeling today?</h2>
+                    <p class="subtitle">Describe your symptoms and get personalized recommendations</p>
+                </div>
+                
+                <form class="symptom-form" id="symptomForm">
+                    <div class="form-group">
+                        <label for="age">
+                            <i class="fas fa-user"></i> Select your age:
+                        </label>
+                        <select id="age" name="age" required>
+                            <option value="">Select age range</option>
+                            <option value="0-12">0-12 years</option>
+                            <option value="13-17">13-17 years</option>
+                            <option value="18-25">18-25 years</option>
+                            <option value="26-40">26-40 years</option>
+                            <option value="41-60">41-60 years</option>
+                            <option value="61+">61+ years</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="symptoms">
+                            <i class="fas fa-notes-medical"></i> Describe your symptoms in detail:
+                        </label>
+                        <textarea 
+                            id="symptoms" 
+                            name="symptoms" 
+                            placeholder="Example: I've been experiencing a persistent headache for the past two days, along with mild fever and fatigue..."
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="loading"></span>
+                        <i class="fas fa-search"></i> Get Health Recommendations
+                    </button>
+                </form>
+
+                <div class="disclaimer">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>This is an AI assistant and not a substitute for professional medical advice. Always consult with a healthcare provider for proper diagnosis and treatment.</p>
+                </div>
+            </div>
+
+            <div class="error-message" id="errorMessage"></div>
+
+            <div class="suggestions" id="suggestions">
+                <h2><i class="fas fa-clipboard-list"></i> Your Health Recommendations</h2>
+                <div id="suggestionsList"></div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ArogyaAI</h4>
+                    <p>Your trusted health companion powered by advanced AI technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Important Notice</h4>
+                    <p>This application uses AI technology to provide health suggestions. Always consult with a healthcare professional for medical advice.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Team</h4>
+                    <p><i class="fas fa-envelope"></i> poorvipalimpu28@gmail.com</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/poorvi-pal09/" target="_blank" class="social-link">Poorvi Pal</a></p>
+                    <p><i class="fas fa-envelope"></i> adithyant982@gmail.com</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/adithya-n-t-b3800a356/" target="_blank" class="social-link">Adithya N T</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 ArogyaAI. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 

@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://wallpapercave.com/wp/wp2042100.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+/* Dark overlay */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+/* Main container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(20, 20, 20, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Header styles */
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: #f8d30f;
+  margin-bottom: 10px;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Intro text */
+.intro-text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+.symptom-form {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.symptom-form input {
+  width: 90%;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.symptom-form button {
+  background-color: #f8d30f;
+  color: white;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.symptom-form button:hover {
+  background-color: #f0a500;
+}
+
+/* Suggestions */
+.suggestions {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+
+.suggestions strong {
+  color: #f8d30f;
+}
